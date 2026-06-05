@@ -1,0 +1,626 @@
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;  /* mobile पर hide करो */
+  }
+  
+  body {
+    margin-left: 0;  /* sidebar के लिए margin हटाओ */
+  }
+}
+
+
+
+.sidebar {
+  position: fixed;
+  left: 2px;
+  margin-top: 200px;
+  background: transparent;
+  display: flex;
+  transform: translatex(15%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.nav-icon {
+  position: relative;
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-icon i {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Label को hide रखो */
+.nav-label {
+  position: absolute;
+  background: #007bff;
+  color: white; 
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+ 
+}
+
+/* Active State */
+.nav-icon.active {
+  position: relative;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-icon.active i {
+  font-size: 24px;
+  border-radius: 25px;
+   color: #333;
+}
+
+.nav-icon.active .nav-label {
+  opacity: 1;
+  left: 60px;
+  display: inline;
+  opacity: 1;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Hover Effect */
+.nav-icon:hover {
+  background: #007bff;
+  border-radius: 25px;
+
+}
+
+.nav-icon:hover i {
+  color: white;
+ 
+}
+
+
+#hero{
+    color: rgb(252, 244, 244);
+}
+
+#box{
+    background-color: white;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+#box a{
+color: black;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+    body {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+  margin: 0;                /* ← सब margins हटाओ */
+  padding: 0;
+  width: 100%;
+}
+
+  
+
+
+#hero{
+    display: flex; 
+ justify-content: space-between;
+ align-items: flex-end;
+ padding: 50px 5%;
+ min-height: 50vh;
+ 
+}
+#heroright{
+    display: flex;  
+    object-position: center top; 
+     position: absolute; 
+    right: 0;            
+     bottom: 0;    
+    margin-top: 0px;
+    align-self: flex-end;
+    margin-left: auto;
+    }
+    img{
+        width: 520px;
+        height: 850px;
+        object-fit: cover;
+        margin-top: 0px;
+        object-position: center top; 
+        filter: drop-shadow(5px 6px 5px rgba(0, 0, 0, 0.8));
+    }
+
+#heroleft{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-left: 90px;
+    justify-content: center;
+    align-self: center;
+    margin-top: 150px;
+    width: 46%;
+    line-height: 1.9;
+   
+}
+#hero h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: px;
+    color: white;
+
+}
+#hero span{
+    font-size: 30px;
+    color: rgba(7, 149, 237, 0.83);
+    font-weight: px;
+    
+}
+#heroleft p{
+    line-height: 1.5;
+    text-align: justify;
+    margin-top:     0;
+    color: white;
+    width: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#about{
+   padding: 80px;
+  min-height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+#about h2{
+    justify-content: center;
+    margin-top: 300px;
+    align-items: center;
+    margin-left: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    position: relative;
+    display:flex;
+    gap:10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.line{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0px;
+   margin-top: 0px;
+   margin-left: 160px;
+}
+.grey {
+  width: 70px;
+  height: 2px;
+  background: #ccc;
+}
+.blu{
+    display: flex;
+     background: #1847d4;
+     width: 50px;
+     height: 3px;
+     
+
+
+}
+#about p{
+     display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-self: center;
+    line-height: 1.9;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 90px;
+  
+}
+
+
+.email{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.arrow{
+    color: #1098e1;
+}
+#Resume{
+     padding: 80px;
+  min-height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+
+#Resume h2{
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    margin-left: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    position: relative;
+    display:flex;
+    gap:10px;
+    margin-bottom: 0px;
+    text-align: center;
+    
+ }
+ .rline{
+     display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0px;
+   margin-top: 0px;
+   margin-left: 160px;
+
+ }
+ .rgrey{
+    width: 50px;
+  height: 2px;
+  background: #ccc;
+
+ }
+ .rblu{
+    align-items: center;
+     display: flex;
+     background: #1847d4;
+     width: 50px;
+     height: 3px;
+
+ }
+ #Resume p{
+      display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-self: center;
+    line-height: 1.9;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 90px;
+
+ }
+ .rbuton{
+    display: flex;
+     margin-left: 150px;
+     background-color:rgb(101, 101, 105); ;
+     width: 150px;
+     height: 40px;
+     margin-left: 500px;
+    align-items: center;
+     justify-content: center;
+     border-radius: 20px;
+ 
+    
+ }
+ .rbuton a{
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .rbuton:hover{
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s;
+ }
+ .re{
+    color: white;
+ }
+ #Contact{
+    padding: 80px;
+  min-height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+ }
+ .Contact h2{
+    justify-content: center;
+    margin-top: 210px;
+    align-items: center;
+    margin-left: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    position: relative;
+    display:flex;
+    gap:10px;
+    margin-bottom: 0px;
+    text-align: center;
+ }
+ .cline{
+     display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0px;
+   margin-top: 0px;
+   margin-left: 160px;
+ }
+ .cgrey{
+    width: 80px;
+  height: 2px;
+  background: #ccc;
+
+ }
+.cblu{
+    align-items: center;
+     display: flex;
+     background: #1847d4;
+     width: 50px;
+     height: 3px;
+}
+
+
+#contact p{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-self: center;
+    line-height: 1.9;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 90px;
+}
+.touch i{
+    color: rgb(239, 235, 235);
+    font-size: 30px; 
+}
+.touch{
+   display: flex;
+    gap: 50px;
+    margin-top: 25px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    justify-content: center;
+     
+}
+
+.touch a{
+    position: relative;
+    text-decoration: none;
+     transition: all 0.3s;
+}
+.touch i {
+  color: rgb(239, 235, 235);
+  font-size: 30px;
+  transition: all 0.3s;
+}
+/* .touch :hover{
+     transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  color: #1098e1;
+  border-bottom: 2px solid #007bff;
+  
+} */
+.touch a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 3px;
+  background: #007bff;
+  transition: width 0.3s ease;
+}
+.touch a:hover::after {
+  width: 100%;  /* ← left से right grow */
+}
+.touch a:hover i {
+  transform: scale(1.1);
+  color: #1098e1;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.socialmedia{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    margin-left: 100px;
+    
+}
+.socialmedia i{
+    color: white;
+    font-size: 25px; 
+}
+.socialmedia i:hover{
+    color: #1098e1;
+    text-underline-offset: 20px;
+}
+footer{
+    display: flex;
+    padding: 80px;
+    width: 100%;
+    margin-top: 50px;
+     box-sizing: border-box;
+     text-align: center;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer h3{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500px;
+     margin-left: 90px;
+     display: flex;
+    justify-content: center;
+     margin-bottom: 10px;
+}
+
+.lines{
+      display: flex;
+   margin-top: 0px;
+   margin-left: 90px;
+}
+.blue{
+     display: flex;
+     background: #1847d4;
+     width: 70px;
+     height: 5px;
+     border-radius: 20px;
+}
+    
+
+
+
+    html{
+  scroll-behavior: auto;
+    margin: 0;
+  padding: 0;
+  width: 100%;  
+}
+
+@media (max-width: 768px){
+
+    .sidebar{
+        display: none;
+    }
+    .lines{
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      
+    }
+    .blue{
+      margin-left: 0px;
+      align-self: baseline;
+      
+    }
+
+    #hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+    img{
+      justify-content: center;
+      margin-left: 50px;
+    }
+
+    #heroleft{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #heroleft p{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    #heroright{
+        width: 100%;
+        position: static;
+    }
+
+    #heroright img{
+        width: 280px;
+        height: auto;
+    }
+
+    #hero h1{
+        font-size: 32px;
+    }
+
+    #hero span{
+        font-size: 22px;
+    }
+
+    /* About */
+
+    #about,
+    #Resume,
+    #Contact{
+        padding: 40px 20px;
+    }
+
+    #about h2,
+    #Resume h2,
+    .Contact h2{
+        margin: 0;
+        font-size: 30px;
+        justify-content: center;
+    }
+
+    .line,
+    .rline,
+    .cline{
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    #about p,
+    #Resume p,
+    #contact p{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .email{
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .touch{
+        margin: 20px 0;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .socialmedia{
+        margin: 20px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .rbuton{
+        margin: 30px auto;
+    }
+
+    footer{
+        padding: 40px 20px;
+    }
+
+    footer h3{
+        margin: 0;
+        text-align: center;
+    }
+
+    .lines{
+        margin: 10px 0;
+        justify-content: center;
+    }
+}
+    
